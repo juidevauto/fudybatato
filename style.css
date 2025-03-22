@@ -99,7 +99,42 @@ h2 {
     color: #4A2C2A; /* Rich Brown */
 }
 
+.food-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.food-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #D35E56;
+}
+
+.food-item h3 {
+    background-color: #D35E56;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
 /* Contact Section */
 .contact a {
     text-decoration: none;
-    color: #FAF3E0; /* Soft*
+    color: #FAF3E0; 
+}/* Soft*
